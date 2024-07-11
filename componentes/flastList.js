@@ -1,6 +1,5 @@
 import React from "react";
 import { View, Text, FlatList } from "react-native";
-import styles from "../Styles/styles";
 
 const produtos = [
   {
@@ -23,7 +22,7 @@ export default function () {
       <FlatList
         data={produtos}
         keyExtractor={(item) => item.id}
-        renderItem={({ item }) => (
+        renderItem={({item}) => (
           <Text>
             {" "}
             Descricao:{item.desc[0]} - Valor:{item.desc[1]}

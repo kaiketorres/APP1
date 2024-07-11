@@ -7,10 +7,6 @@ export default StyleSheet.create({
         alignItems: 'center',
         justifyContent:'center',
     },
-    textoCurso:{
-        color: 'blue',
-        fontSize: 15,
-      },
     textoTitulo:{
         color: '#f00',
         fontSize: 30,
