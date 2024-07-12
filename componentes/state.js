@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
-import botao from "./botao";
 import Botao from "./botao";
 
 export default function () {
@@ -12,7 +11,7 @@ export default function () {
       {ligado ?
         <View>
           <Text style={estilos.texto}>CBF Cursos</Text>
-          <Text style={estilos.texto} >Curso de Reactr native</Text>
+          <Text style={estilos.texto}>Curso de Reactr native</Text>
         </View>
         :
         <Text></Text>

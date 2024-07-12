@@ -24,7 +24,6 @@ export default function () {
         keyExtractor={(item) => item.id}
         renderItem={({item}) => (
           <Text>
-            {" "}
             Descricao:{item.desc[0]} - Valor:{item.desc[1]}
           </Text>
         )}
