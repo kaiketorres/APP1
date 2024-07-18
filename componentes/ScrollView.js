@@ -1,11 +1,17 @@
-import react from "react";
-import { View, Text, ScrollView } from "react-native";
+import React,{useState} from "react";
+import { View, Text, ScrollView, RefreshControl } from "react-native";
 
 
 export default function(){
+
+  const [atulizando,setAtualizando] = useState(false)
+
+  const aoAtualizando = () => {setAtualizando(true); setTimeout(() => {setAtualizando(false)},3000)
+  }
+
   return(
   <View style={{flex:1}}>
-   <ScrollView style={{backgroundColor:'#333', padding:15}}  >
+   <ScrollView  refreshControl={<RefreshControl onRefresh={aoAtualizando}  refreshing={atulizando} />} o    style={{backgroundColor:'#333', padding:15}}  >
     <Text style={{color:'white'}}>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt erat eu ex imperdiet, vel venenatis enim accumsan. Aenean at magna ante. Sed maximus turpis eu fermentum imperdiet. Ut ultricies lacus feugiat erat congue, sit amet pulvinar justo posuere. Cras tempus bibendum enim, a ultricies neque blandit sit amet. Sed placerat egestas dolor at scelerisque. Fusce justo ligula, congue at elit nec, vulputate tincidunt libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed laoreet sollicitudin euismod. Ut consequat purus ut condimentum pulvinar.

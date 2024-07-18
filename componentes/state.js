@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, Button } from "react-native";
-import Botao from "./botao";
 
 export default function () {
 
@@ -17,7 +16,6 @@ export default function () {
         <Text></Text>
       }
       <Button title={ligado ? 'Esconder Texto' : 'Ver Texto'} onPress={() => setLigado(!ligado)} />
-       <Botao/>
     </View>
   )
 }
